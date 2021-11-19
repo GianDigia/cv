@@ -7,7 +7,8 @@
       "plugin:@typescript-eslint/recommended",
       "plugin:@typescript-eslint/recommended-requiring-type-checking",
       "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:prettier/recommended"
+      "plugin:prettier/recommended",
+      "plugin:react-hooks/recommended"
     ],
     "env": {
       "browser": true,
@@ -45,7 +46,13 @@
           }
         }
       ],
-      "react-hooks/exhaustive-deps": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": [
+        "error",
+         {
+           "enableDangerousAutofixThisMayCauseInfiniteLoops": true
+         }
+       ],
       "import/no-named-as-default": "off",
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
