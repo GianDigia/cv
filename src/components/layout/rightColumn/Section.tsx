@@ -7,7 +7,10 @@ import Row from './Row'
 
 const Section: React.FC<RightColumnSection> = ({ icon, items, title }) => {
   const rows = useMemo(
-    () => items.map((item, i) => <Row key={i} {...item} />),
+    () =>
+      items
+        .filter((item) => !item.hidden)
+        .map((item, i) => <Row key={i} {...item} />),
     [items]
   )
 

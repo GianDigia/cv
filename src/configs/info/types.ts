@@ -27,6 +27,7 @@ export interface RightSectionRow {
   title: string
   description?: ReactChild
   notes?: string
+  hidden?: boolean
 }
 
 export interface RightColumnSection {
