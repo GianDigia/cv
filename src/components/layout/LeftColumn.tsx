@@ -1,5 +1,47 @@
 import React from 'react'
+import styled, { css } from 'styled-components'
 
-const LeftColumn: React.FC = () => <div>LC</div>
+import { isProdCVSite } from '../../common/utils'
+import { data } from '../../configs/info/data'
+import { black, white } from '../../configs/palette'
+import profilePicture from '../../img/profile.jpg'
+import Section from './leftColumn/Section'
+
+const sections = data.leftColumn.sections.map((section, i) => (
+  <Section key={i} {...section} />
+))
+
+const LeftColumn: React.FC = () => (
+  <Wrapper>
+    <Img src={profilePicture} />
+    {sections}
+  </Wrapper>
+)
+
+const toPrintStyles = css`
+  @media print {
+    background: ${white};
+    color: ${black};
+    border-right: 1px solid ${black};
+  }
+`
+
+const Wrapper = styled.div`
+  flex: 3 1 0;
+
+  background: ${black};
+  color: ${white};
+
+  ${isProdCVSite && toPrintStyles}
+
+  padding: 1rem;
+`
+
+const Img = styled.img`
+  border-radius: 50%;
+  max-width: 75%;
+  margin: auto;
+  display: block;
+`
 
 export default LeftColumn
