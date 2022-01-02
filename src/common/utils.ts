@@ -1,1 +1,2 @@
-export const isProdCVSite = window.location.hostname === 'cv.giandigia.dev'
+export const isProdCVSite =
+  window.location.hostname === 'elisabardinocv.giandigia.dev'

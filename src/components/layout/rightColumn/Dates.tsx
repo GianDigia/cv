@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { DatesType } from '../../../configs/info/types'
 
 const Dates: React.FC<DatesType> = ({ from, to }) => {
-  const text = from === to ? from : `${from} - ${to || 'Now'}`
+  const text = from === to ? from : `${from} - ${to || 'Oggi'}`
 
   return <Wrapper>{text}</Wrapper>
 }
