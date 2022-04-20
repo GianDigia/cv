@@ -130,7 +130,7 @@ export const data: InfoType = {
           {
             title: '🇬🇧 Inglese - B2',
             notes:
-              'Certificato tramite lettorato univeristario, conoscenza approfondita durante lo studio di materie di indirizzo in lingua Inglese quali Storia, Economia Politica, Marketing e Relazione internazionali',
+              'Certificato tramite lettorato univeristario, conoscenza approfondita durante lo studio di materie di indirizzo in lingua Inglese quali Storia, Economia Politica, Marketing e Relazioni internazionali',
           },
           {
             title: '🇪🇸 Spagnolo - Buono',
