@@ -12,7 +12,7 @@ const Section: React.FC<LeftColumnSection> = ({ items, title }) => {
 
   return (
     <Wrapper>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <Rows>{rows}</Rows>
     </Wrapper>
   )

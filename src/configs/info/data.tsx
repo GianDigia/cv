@@ -7,14 +7,12 @@ import { GrMail } from 'react-icons/gr'
 import { RiFlag2Fill } from 'react-icons/ri'
 import { SiDevpost } from 'react-icons/si'
 
-import Link from '../../components/layout/rightColumn/Link'
 import { InfoType } from './types'
 
 export const data: InfoType = {
   leftColumn: {
     sections: [
       {
-        title: 'Info',
         items: [
           {
             title: 'Name',
@@ -45,7 +43,6 @@ export const data: InfoType = {
         ],
       },
       {
-        title: 'Social',
         items: [
           {
             title: 'LinkedIn',
@@ -77,7 +74,7 @@ export const data: InfoType = {
   },
   rightColumn: {
     title: 'Digiacomo Gianmarco',
-    subtitle: 'Web Developer',
+    subtitle: 'Full Stack Developer',
     sections: [
       {
         title: 'Work Experiences',
@@ -85,11 +82,20 @@ export const data: InfoType = {
         items: [
           {
             dates: {
+              from: 'Mar 2022',
+            },
+            title: 'Front End Developer at Neulabs',
+            // description: '',
+            notes: 'React, TypeScript, CSS, StoryBook',
+          },
+          {
+            dates: {
               from: 'Jan 2020',
+              to: 'Feb 2022',
             },
             title: 'Front End Developer at Fatture in Cloud',
             description:
-              'Fatture in Cloud is the most used Italian invoicing software with more than 400k paying customers. As a Front End Developer at Fatture in Cloud my responsibility was mainly to convert the product from a PHP project with some standalone React modules to a React single page application saving most of the already existing codebase, always aiming to follow modern best practices and to deliver clean, optimized and well-typed code. I also gained experience mentoring colleagues and  managing the internal design system',
+              'Fatture in Cloud is the most used Italian invoicing software with more than 450k paying customers. As a Front End Developer at Fatture in Cloud my responsibility was mainly to convert the product from a PHP project with some standalone React modules to a React single page application saving most of the already existing codebase, always aiming to follow modern best practices and to deliver clean, optimized and well-typed code. I also gained experience mentoring colleagues and  managing the internal design system',
             notes: 'React, Redux, TypeScript, CSS, StoryBook',
           },
           {
@@ -106,8 +112,6 @@ export const data: InfoType = {
                 the company's internal management software. The software was
                 built in Ruby on Rails. It had responsive views and dozen of
                 thousands of product records imported from different suppliers.
-                The result of this work is accessible in a minimal part on
-                <Link to={'www.schoolwear.it'}>www.schoolwear.it</Link>
               </>
             ),
             notes: 'HTML, CSS, JS, jQuery, Ruby, Ruby on Rails',
@@ -180,7 +184,6 @@ export const data: InfoType = {
           },
           {
             title: 'High School Graduation in IT and Telecommunications',
-            description: 'ISIS A. Malignani (Udine)',
             dates: {
               from: 'Sep 2011',
               to: 'Jun 2016',

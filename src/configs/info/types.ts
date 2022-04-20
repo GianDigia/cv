@@ -9,7 +9,7 @@ export interface LeftSectionRow {
 }
 
 export interface LeftColumnSection {
-  title: string
+  title?: string
   items: LeftSectionRow[]
 }
 

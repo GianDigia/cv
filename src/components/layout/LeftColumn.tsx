@@ -7,8 +7,18 @@ import { black, white } from '../../configs/palette'
 import profilePicture from '../../img/profile.jpg'
 import Section from './leftColumn/Section'
 
+const Divider = styled.div`
+  height: 0.0625em;
+  background: ${white};
+  margin: 1rem 0;
+  opacity: 0.5;
+`
+
 const sections = data.leftColumn.sections.map((section, i) => (
-  <Section key={i} {...section} />
+  <>
+    {i !== 0 && <Divider />}
+    <Section key={i} {...section} />
+  </>
 ))
 
 const LeftColumn: React.FC = () => (
